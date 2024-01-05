@@ -8,8 +8,11 @@ export default function UserForm({ setUserState, userState }) {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        const newUser = { ...formState }
-        setUserState([...userState, newUser])
+
+        // setUserState([...userState, formState]) // both works
+        setUserState(old => {
+            return [...old, formState]
+        })
     }
 
     const handleChange = (event) => {
