@@ -9,3 +9,11 @@
     overflow-x: auto;
     box-shadow: 5px 5px 30px -5px #ffffff89;
 }
+
+table {
+    display: table;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}

@@ -1,0 +1,20 @@
+* {
+    transition: all .2s ease-in-out;
+}
+
+.error {
+    background-color: rgb(247, 52, 52);
+    color: black;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    padding: .2rem;
+    font-size: 0.75rem;
+    display: none;
+    transform: scale(1);
+
+}
+
+.vis {
+
+    display: block;
+}

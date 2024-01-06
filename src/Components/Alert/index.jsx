@@ -1,8 +1,19 @@
 import React from 'react'
+import { useState } from 'react'
+import styles from './styles.module.css'
+export default function Alert({ name, errorState }) {
 
-export default function Alert() {
+
+
+
+
     return (
         <>
+            <div className={`${styles.error} ${errorState[name] ? styles.vis : ''}`}>
+                {errorState[name]}
+            </div>
+
+
         </>
     )
 }
