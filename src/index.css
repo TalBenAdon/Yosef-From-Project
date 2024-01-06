@@ -6,6 +6,13 @@
   margin: 0;
   box-sizing: border-box;
   transition: all .2s ease-in-out;
+  font-size: small;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
 
 #root {
@@ -36,4 +43,11 @@ h1,
 h2,
 h3 {
   text-transform: capitalize;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Ensure at least the viewport height */
 }

@@ -15,8 +15,8 @@ export default function UserTable({ userState }) {
                     </tr>
                 </thead>
                 <tbody>
-                    {userState.map(user => {
-                        return <tr key={user.email}>
+                    {userState.map((user, index) => {
+                        return <tr key={index}>
 
                             <td>{user.firstName}</td>
                             <td>{user.lastName}</td>
